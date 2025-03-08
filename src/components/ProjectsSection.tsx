@@ -44,7 +44,7 @@ const projects = [
     },
     {
         title: "Hospital management - ideamagix",
-        description: ["An online platform for connecting patients and doctors efficiently.", " Patients can book appointments, access medical records, and get doctor suggestions.", "Doctors can *manage schedules, view patient details, and provide consultations.", "Secure database integration ensures efficient data storage and retrieval."],
+        description: ["An online platform for connecting patients and doctors efficiently.", " Patients can book appointments, access medical records, and get doctor suggestions.", "Doctors can manage schedules, view patient details, and provide consultations.", "Secure database integration ensures efficient data storage and retrieval."],
         tech: ["HTML", "CSS", "Bootstrap", "Javascript", "SQL"],
         externalLink: "https://scarlet-worries.000webhostapp.com/",
         githubLink: "https://github.com/gayatri1904/Project-12-Hospital-IdeaMagix",
@@ -148,12 +148,12 @@ const ProjectsSection: React.FC = () => {
                                 <Slider {...settings}>
                                     {project.images.map((image, i) => (
                                         <div key={i}>
-                                            <img src={image} alt={project.title} className="w-full h-52 " />
+                                            <img src={image} alt={project.title} className="w-full h-72" />
                                         </div>
                                     ))}
                                 </Slider>
                             ) : (
-                                <img src={project.images[0]} alt={project.title} className="w-full h-48 object-cover" />
+                                <img src={project.images[0]} alt={project.title} className="w-full h-74" />
                             )}
                             <div className="p-6">
                                 <h3 className="text-xl font-bold mb-4">{project.title}</h3>
@@ -172,7 +172,7 @@ const ProjectsSection: React.FC = () => {
                                         </span>
                                     ))}
                                 </div>
-                                <div className="mt-4 flex gap-4">
+                                <div className="mt-6 flex gap-4">
                                     {project.externalLink &&
                                         <a href={project.externalLink} className="inline-flex items-center gap-1 text-purple-400 hover:text-purple-300">
                                             View Project <ExternalLink size={16} />
