@@ -59,7 +59,7 @@ const projects = [
         externalLink: "",
         githubLink: "https://github.com/gayatri1904/PhonePayPulse1",
         images: [
-            PROJ35, PROJ36, PROJ37, PROJ31, PROJ32, PROJ33, PROJ34
+            PROJ31, PROJ32, PROJ33, PROJ34, PROJ35, PROJ36, PROJ37
         ]
     }
 ];

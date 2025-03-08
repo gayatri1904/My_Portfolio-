@@ -7,14 +7,14 @@ const education = [
     {
         degree: "MSc (Computer Science)",
         institution: "K.R.T. Arts, B. H. Commerce and Science College, Nashik-01",
-        date: "Aug 2023 - May 2025",
-        CGPA: "8.12"
+        date: "2023 - 2025",
+        CGPA: ""
     },
     {
         degree: "BSc(Computer Science)",
         institution: "Kr. Vasantrav Naik Art's, Commerce and Science College, Nashik-01",
-        date: "Aug 2019 - Oct  2022  ",
-        CGPA: "8.69"
+        date: "2019 - 2022  ",
+        CGPA: ""
     }
 ];
 
@@ -50,7 +50,7 @@ const EducationSection: React.FC = () => {
                             <h3 className="text-xl font-bold mb-2">{edu.degree}</h3>
                             <p className="text-gray-400 mb-1"><strong>Institution:</strong> {edu.institution}</p>
                             <p className="text-gray-400 mb-4"><strong>Date:</strong> {edu.date}</p>
-                            <p className="text-gray-400 mb-4"><strong>CGPA:</strong> {edu.CGPA}</p>
+                            {edu.CGPA && <p className="text-gray-400 mb-4"><strong>CGPA:</strong> {edu.CGPA}</p>}
                         </motion.div>
                     ))}
                 </div>
