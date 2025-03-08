@@ -23,6 +23,14 @@ import PRO7 from '../assets/Projects/Project2/7_ideamagix_project_7.png'
 import PRO8 from '../assets/Projects/Project2/8_ideamagix_project_8.png'
 import PRO9 from '../assets/Projects/Project2/9_ideamagix_project_9.png'
 
+import PROJ31 from '../assets/Projects/Project3/IMG1.jpg'
+import PROJ32 from '../assets/Projects/Project3/IMG2.jpg'
+import PROJ33 from '../assets/Projects/Project3/IMG3.jpg'
+import PROJ34 from '../assets/Projects/Project3/IMG4.jpg'
+import PROJ35 from '../assets/Projects/Project3/IMG5.jpg'
+import PROJ36 from '../assets/Projects/Project3/IMG6.jpg'
+import PROJ37 from '../assets/Projects/Project3/IMG7.jpg'
+
 const projects = [
     {
         title: "Imperial Family Salon",
@@ -38,10 +46,20 @@ const projects = [
         title: "Hospital management - ideamagix",
         description: ["An online platform for connecting patients and doctors efficiently.", " Patients can book appointments, access medical records, and get doctor suggestions.", "Doctors can *manage schedules, view patient details, and provide consultations.", "Secure database integration ensures efficient data storage and retrieval."],
         tech: ["HTML", "CSS", "Bootstrap", "Javascript", "SQL"],
-        externalLink: " https://scarlet-worries.000webhostapp.com/",
+        externalLink: "https://scarlet-worries.000webhostapp.com/",
         githubLink: "https://github.com/gayatri1904/Project-12-Hospital-IdeaMagix",
         images: [
             PRO1, PRO2, PRO3, PRO4, PRO5, PRO6, PRO7, PRO8, PRO9
+        ]
+    },
+    {
+        title: "Phonepe Pulse Data Visualization and Exploration",
+        description: ["Orchestrated the end-to-end development of a Real-Time Betting Game Platform, focusing on delivering a high-performance and secure betting environment.", "It allows users to interactively explore and visualize data related to PhonePe's services and metrics."],
+        tech: ["python", "sql", "Plotly", "Streamlit", "numpy"],
+        externalLink: "",
+        githubLink: "https://github.com/gayatri1904/PhonePayPulse1",
+        images: [
+            PROJ35, PROJ36, PROJ37, PROJ31, PROJ32, PROJ33, PROJ34
         ]
     }
 ];

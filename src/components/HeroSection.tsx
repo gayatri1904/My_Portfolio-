@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, Phone } from 'lucide-react';
 import { useTypewriter } from '../hooks/useTypewriter';
 import PROFILE_IMG from '../assets/Profile/Profile_IMG.jpg';
 import RESUME from '../assets/Gayatri_Software_Developer.pdf';
@@ -45,6 +45,10 @@ const HeroSection: React.FC = () => {
         {
             href: "mailto:gayatrijadhav1519@gmail.com",
             icon: <Mail size={24} />
+        },
+        {
+            href: "tel:+918669309045",
+            icon: <Phone size={24} />
         }
     ];
 
@@ -83,7 +87,7 @@ const HeroSection: React.FC = () => {
                                 </motion.div>
                             </motion.div>
                             <motion.p variants={fadeInUp} className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-2xl mb-4">
-                                Crafting exceptional digital experiences. Turning complex problems into elegant solutions.
+                                Worked with multiple programming languages and frameworks, and have a good understanding of both server-side and client-side technologies.
                             </motion.p>
                             <motion.div className='flex gap-4'>
                                 {

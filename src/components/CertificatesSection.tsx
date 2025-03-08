@@ -5,6 +5,9 @@ import { Award } from 'lucide-react';
 import CERTIFICATE1 from "../assets/Certificates/Certificate1.jpg";
 import { IoIosCloseCircle } from "react-icons/io";
 import CERTIFICATE2 from '../assets/Certificates/developer_certificate_accenture.jpg'
+import CERTIFICATE3 from '../assets/Certificates/Certificate3.jpg'
+import CERTIFICATE4 from '../assets/Certificates/AWS.jpg'
+import CERTIFICATE5 from '../assets/Certificates/google analystics.jpg'
 
 const certificates = [
     {
@@ -20,6 +23,27 @@ const certificates = [
         date: "Feb 2025",
         description: "",
         image: CERTIFICATE2
+    },
+    {
+        title: "Android Developement Certificate",
+        issuer: "SoftCrowd Technologies",
+        date: "",
+        description: "",
+        image: CERTIFICATE3
+    },
+    {
+        title: "Amazon Web Services Basics",
+        issuer: "LearnTube",
+        date: "May 2023",
+        description: "",
+        image: CERTIFICATE4
+    },
+    {
+        title: "Google Analytics for Beginners",
+        issuer: "Google Analytics Academy",
+        date: "",
+        description: "",
+        image: CERTIFICATE5
     }
 ];
 
@@ -74,7 +98,7 @@ const CertificatesSection: React.FC = () => {
                             )}
                             <h3 className="text-xl font-bold mb-2">{certificate.title}</h3>
                             <p className="text-gray-400 mb-1"><strong>Issuer:</strong> {certificate.issuer}</p>
-                            <p className="text-gray-400 mb-4"><strong>Date:</strong> {certificate.date}</p>
+                            {certificate.date && <p className="text-gray-400 mb-4"><strong>Date:</strong> {certificate.date}</p>}
                             <p className="text-gray-300">{certificate.description}</p>
                         </motion.div>
                     ))}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import { Github, Linkedin, Mail, Heart, Phone } from 'lucide-react';
 
 const SocialLinks = [
     {
@@ -14,6 +14,10 @@ const SocialLinks = [
     {
         href: "mailto:gayatrijadhav1519@gmail.com",
         icon: <Mail size={24} />
+    },
+    {
+        href: "tel:+918669309045",
+        icon: <Phone size={24} />
     }
 ];
 
@@ -58,7 +62,7 @@ const Footer: React.FC = () => {
                     className="mt-8 pt-8 border-t border-purple-900/30 text-center text-gray-400 text-sm flex items-center justify-center gap-2"
                     whileHover={{ scale: 1.05 }}
                 >
-                    Made with <Heart size={16} className="text-purple-400" /> by Sonu © {new Date().getFullYear()}
+                    Made with <Heart size={16} className="text-purple-400" /> by Gayatri Jadhav © {new Date().getFullYear()}
                 </motion.div>
             </div>
         </motion.footer>
